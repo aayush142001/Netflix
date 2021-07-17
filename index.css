@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: black;
+}
+.container .head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 11;
+    padding: 5px;
+}
+#logo {
+    width: 20%;
+    position: relative;
+    left: 25px;
+    bottom: 13px;
+}
+#opt {
+    padding: 8px;
+    position: relative;
+    left: 311px;
+    bottom: 11px;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+}
+#sign {
+    position: relative;
+    right: 60px;
+    bottom: 11px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.6rem solid #111;
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#000,transparent);
+}
+.banner .fit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.banner .box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+}
+.banner .box .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner .box .heading h2 {
+    font-size: 3.8rem;
+    color: white;
+    letter-spacing: 2px;
+    width: 80%;
+}
+.banner .box .heading h5 {
+    font-size: 1.625rem;
+    color: white;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+.banner .box .heading p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    padding: 15px 0;
+    padding-bottom: 20px;
+}
+.banner .box .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.banner .box .search input {
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    border-radius: 1px;
+    padding: 10px 10px 10px 10px;
+    min-width: 469px;
+    height: 70px;
+    align-items: center;
+    color: black;
+}
+.banner .box .search a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 1px;
+    background-color: #e50914;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    font-size:23px;
+    line-height: 60px;
+    min-width: 200px;
+    padding: 5px 30px;
+}
+.banner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#000,transparent);
+}
+.part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+.part1 .talk {
+    width: 40%;
+}
+.part1 .talk h1 {
+    font-size: 3.3rem;
+    letter-spacing: 1px;
+    padding-bottom: 18px;
+    color: white;
+}
+.part1 .talk p {
+    font-size: 1.8rem;
+    color: white;
+}
+.part1 .img1 {
+    width: 45%;
+}
+.part1 .img1 img {
+    width: 100%;
+}
+.part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+.part2 .img1 {
+    width: 45%;
+}
+.part2 .img1 img {
+    width: 100%;
+}
+.part2 .talk {
+    width: 40%;
+}
+.part2 .talk h1 {
+    font-size: 3.3rem;
+    letter-spacing: 1px;
+    padding-bottom: 18px;
+    color: white;
+}
+.part2 .talk p {
+    font-size: 1.8rem;
+    color: white;
+}
+.part1 .img1 img {
+    width: 100%;
+}
+.part2 .img1 img {
+    width: 100%;
+}
+.freq {
+    padding: 70px 180px;
+    color: white;
+    border-bottom: 0.6rem solid rgb(17,17,17);
+}
+.freq h1 {
+    text-align: center;
+    font-size: 47px;
+    margin-bottom: 50px;
+}
+.freq .question button {
+    width: 71%;
+    position: relative;
+    left: 158px;
+    text-align: left;
+    padding: 27px 44px 4px 24px;
+    font-weight: 500;
+    font-size: 27px;
+    margin-bottom: 10px;
+    background: #303030;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.freq .question button span {
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+}
+.freq .question .faq-answer {
+    width: 71%;
+    position: relative;
+    left: 158px;
+    height: auto;
+    padding: 30px 40px;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: -8px;
+    color: white;
+    background: #303030;
+    text-align: left;
+}
+.closed {
+    display: none;
+}
+.heading2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.search2 {
+    display: flex;
+    justify-content: center;
+}
+.question .box2 .search2 input {
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    border-radius: 1px;
+    padding: 10px 10px 10px 10px;
+    min-width: 515px;
+    height: 70px;
+    align-items: center;
+    color: black;
+}
+.question .box2 .search2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 1px;
+    background-color: #e50914;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    font-size: 1.625rem;
+    line-height: 60px;
+    min-width: 200px;
+    padding: 5px 30px;
+}
+.call {
+    color: #757575;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 75px 0px 30px 295px;
+}
+.call a {
+    text-decoration: none;
+    color: #757575;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 170px 30px 111px;
+    padding: 0px 82px 8px 50px;
+}
+.c1 {
+    display: flex;
+    flex-direction: row;
+}
+.info .one .items li {
+    list-style: none;
+    padding: 10px 10px 10px 10px;
+    margin: 0 20px 0px 90px;
+    font-size: 13px;
+}
+.info .one .items li a {
+    color: #757575;
+    text-decoration: none;
+}
+.c2 {
+    display: flex;
+    flex-direction: row;
+}
+#option {
+    color: #757575;
+    background: black;
+    border: 1px solid rgb(250, 242, 210);
+    border-radius: 0px;
+    font-size: 20px;
+    padding: 10px 0px 15px 40px;
+    position: relative;
+    left: 262px;
+    top: -5px;
+}
+.netf p {
+    color: #757575;
+    font-size: 15px;
+    margin: 25px 300px;
+    margin-left: 261px;
+}
